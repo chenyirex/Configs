@@ -9,11 +9,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
-" Include the system settings
-:if filereadable( "/etc/vimrc" )
-   source /etc/vimrc
-:endif
-
 "Key bindings
 noremap cp yap<S-}>p
 noremap <leader>a =ip
